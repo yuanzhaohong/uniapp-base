@@ -1,0 +1,4 @@
+io/dcloud/uniplugin/PermissionModule.java
+ io.dcloud.uniplugin.PermissionModule
+io/uniplugin_permission/BuildConfig.java
+ io.uniplugin_permission.BuildConfig

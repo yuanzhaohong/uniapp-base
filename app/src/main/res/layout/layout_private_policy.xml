@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:layout_marginRight="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/bg_white_circlr_10r">
+        <TextView
+            android:id="@+id/tv_policy_title"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="用户服务协议与隐私政策"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv_policy_title"
+            app:layout_constraintBottom_toTopOf="@+id/tv_confirm_agress"
+            app:layout_constrainedHeight="true"
+            android:id="@+id/tv_policy_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_20"/>
+
+        <TextView
+            app:layout_constraintBottom_toTopOf="@+id/tv_cancle_policy"
+            android:id="@+id/tv_confirm_agress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="同意"
+            android:textStyle="bold"
+            android:textColor="@color/ffffff"
+            android:textSize="@dimen/dp_16"
+            android:gravity="center"
+            android:background="@drawable/bg_red_circlr_20r"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            />
+        <TextView
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/tv_cancle_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不同意"
+            android:textStyle="bold"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_18"
+            android:paddingBottom="30dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uni.yueyangtong">
+
+    <!-- Barcode(二维码)  begin -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- Barcode(二维码)  end -->
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <!-- Maps(地图) begin -->
+    <!-- Maps - 百度地图 begin -->
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_SETTINGS"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+<!--    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_LOGS"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- Maps(地图) end -->
+
+
+    <!-- Push(推送)只能选择一个推送组件 -->
+    <!-- Push(推送)-MKeyPush begin -->
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <!-- Push(推送)-MKeyPush  end -->
+
+
+    <!-- 小米推送 -->
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+<!--    <uses-permission android:name="android.permission.GET_TASKS"/>-->
+<!--    <uses-permission android:name="android.permission.VIBRATE"/>-->
+<!--    <uses-permission android:name="android.permission.GET_TASKS"/>-->
+<!--    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="com.HBuilder.integrate.permission.MIPUSH_RECEIVE"/>-->
+<!--    <permission android:name="com.HBuilder.integrate.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>-->
+    <!-- 小米推送 end -->
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Push(推送)-个推  begin -->
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+<!--    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.VIBRATE" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+<!--    <uses-permission android:name="android.permission.CALL_PHONE" />-->
+<!--    <uses-permission android:name="getui.permission.GetuiService.com.HBuilder.integrate" />-->
+<!--    <permission-->
+<!--        android:name="getui.permission.GetuiService.com.HBuilder.integrate"-->
+<!--        android:protectionLevel="normal" />-->
+    <!-- Push(推送)-个推    end -->
+
+    <!-- Share(分享)  begin -->
+    <!-- Share - 新浪微博分享 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Share - 腾讯微博分享 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+    <!-- Share - 微信分享 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Push(推送)   end -->
+
+
+    <!-- Speech(语音识别)  begin -->
+    <!-- Speech - 讯飞语音云 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Speech(语音识别)  end -->
+
+
+    <!-- Statistic(统计)  begin -->
+    <!-- Statistic - 友盟统计 -->
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- Statistic(统计)  end -->
+
+    <!-- 小米分享 -->
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE" />
+
+    <!-- 蓝牙 ibeacon权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- 基座删除的部分权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<!--    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+<!--    <uses-permission android:name="android.permission.WRITE_CONTACTS" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+<!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+<!--    <uses-permission android:name="android.permission.SEND_SMS" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+<!--    <uses-permission android:name="android.permission.WRITE_SMS" />-->
+<!--    <uses-permission android:name="android.permission.READ_SMS" />-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:allowBackup="true"
+        tools:replace="label,allowBackup,android:name">
+
+        <activity
+            android:name=".page.PandoraActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:label="@string/app_name"
+            android:theme="@style/OpenStreamAppTransferActivityTheme"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustResize"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".page.BaseActivity"
+            android:theme="@style/ThemeNoTitleBar"/>
+      <provider
+            android:name="io.dcloud.common.util.DCloud_FileProvider"
+            android:authorities="uni.yueyangtong.dc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/dcloud_file_provider" />
+        </provider>
+
+        <!-- Maps(地图) begin -->
+        <!-- meta-data节点android:name="com.baidu.lbsapi.API_KEY"项中android:value值为百度地图应用的Appkey -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="u1vrG5cDGQLioX9fezNAdGkR"/>
+        <!--  -->
+      <!--  <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>-->
+        <!-- Maps(地图) end -->
+
+        <meta-data android:name="com.amap.api.v2.apikey"
+            android:value="1245f55df04583e53eb0fbf511be9a08"/>
+      <!--  <service android:name="com.amap.api.location.APSService" />-->
+
+        <!-- 微信分享 配置begin -->
+      <meta-data
+            android:name="WX_SECRET"
+            android:value="1071f75c29234cce891fb0373f12dc08" />
+        <meta-data
+            android:name="WX_APPID"
+            android:value="wxaa48b1d5ac4e9edf" />
+
+       <activity
+            android:name="uni.yueyangtong.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxaa48b1d5ac4e9edf" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享 配置 end -->
+
+        <!-- 微信支付配置 start -->
+       <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <meta-data
+            android:name="WX_APPID"
+            android:value="wxaa48b1d5ac4e9edf" />
+
+        <!-- 微信支付配置end -->
+        <!-- VIVO厂商通道 start-->
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="92bfdc4d50751aad58c06df3b5cc38f6" />
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="105469478" />
+
+        <!-- VIVO厂商通道 end-->
+
+        <!-- HUAWEI厂商通道 start-->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="102866661" />
+
+        <!--华为推送-->
+        <provider
+            android:name="com.huawei.hms.update.provider.UpdateProvider"
+            android:authorities="com.hjh.hdd.hms.update.provider"
+            android:exported="false"
+            android:process=":updateProvider"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities" />
+        <!-- HUAWEI厂商通道 end-->
+        <!-- Dcloud 开屏广告配置>
+        <meta-data android:name="DCLOUD_STREAMAPP_CHANNEL" android:value="io.dcloud.H57BCF8D2|H57BCF8D2|12331280401"></meta-data>
+        <meta-data android:name="DCLOUD_AD_ID" android:value="-553621487"></meta-data>
+        <meta-data android:name="DCLOUD_AD_SPLASH" android:value="true"></meta-data>
+        < Dcloud 开屏广告配置-->
+
+        <activity
+            android:name=".page.MipushTestActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/ThemeNoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="${applicationId}"
+                    android:path="/thirdpush"
+                    android:scheme="agoo" />
+            </intent-filter>
+        </activity>
+        <!--魅族push应用定义消息receiver声明 -->
+        <receiver android:name=".page.MeizuTestReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <!-- 接收register消息 -->
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <!-- 接收unregister消息-->
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <!-- 兼容低版本Flyme3推送服务配置 -->
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category android:name="uni.yueyangtong"/>
+            </intent-filter>
+        </receiver>
+       <activity
+            android:name="io.dcloud.PandoraEntryActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard"
+            android:hardwareAccelerated="true"
+            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+            android:screenOrientation="user"
+            android:theme="@style/OpenStreamAppTransferActivityTheme"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="h56131bcf" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".page.PushMessageDetailsActivity"
+                  android:theme="@style/ThemeNoTitleBar"/>
+        <activity android:name=".page.WebActivity"
+            android:theme="@style/MyAppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="dcloud_appkey"
+            android:value="1f89381e16fa416f27d9cd665830e611"/>
+        <meta-data android:name="DCLOUD_WRITE_EXTERNAL_STORAGE" android:value="none"/>
+        <meta-data android:name="DCLOUD_READ_PHONE_STATE" android:value="none"/>
+    </application>
+
+</manifest>

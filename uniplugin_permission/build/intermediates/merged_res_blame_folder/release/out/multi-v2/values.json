@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/liuwei/Documents/tengyun.nosync/yuebanyuehao/uniapp-base/uniplugin_permission/build/intermediates/res/merged/release/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/liuwei/.gradle/caches/transforms-2/files-2.1/563853640dc4ca931a51d0dee7eaf74b/jetified-drawee-1.13.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,141",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,6070",
+                        "endLines": "140,231",
+                        "endColumns": "22,22",
+                        "endOffsets": "6065,9761"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/liuwei/Documents/tengyun.nosync/yuebanyuehao/uniapp-base/uniplugin_permission/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/liuwei/.gradle/caches/transforms-2/files-2.1/563853640dc4ca931a51d0dee7eaf74b/jetified-drawee-1.13.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,141",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,6070",
+                        "endLines": "140,231",
+                        "endColumns": "22,22",
+                        "endOffsets": "6065,9761"
+                    }
+                }
+            ]
+        }
+    ]
+}

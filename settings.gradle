@@ -1,0 +1,4 @@
+include ':uniplugin_permission'
+include ':yxyc_amap'
+include ':app'
+include ':push'

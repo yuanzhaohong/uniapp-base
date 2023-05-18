@@ -1,0 +1,23 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Yxyc-Amap",
+          "class": "com.zhcx.yxyc.amap.AMapModule"
+        },
+        {
+          "type": "module",
+          "name": "PayModule",
+          "class": "com.yueyangtong.onepaysdk.PayModule"
+        },
+        {
+          "type": "module",
+          "name": "PermissionModule",
+          "class": "io.dcloud.uniplugin.PermissionModule"
+        }
+      ]
+    }
+  ]
+}
